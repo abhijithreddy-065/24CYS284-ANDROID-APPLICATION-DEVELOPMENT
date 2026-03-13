@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    android:paddingTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- STATUS TEXT -->
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS: SAFE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- SOS BUTTON -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sosBtn"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:text="SOS"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_dark"
+            app:cornerRadius="110dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- SHAKE SWITCH -->
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/shakeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Shake Trigger"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CONTACTS -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectContactsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Trusted Contacts"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- HISTORY -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewHistoryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Emergency History"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- CANCEL -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelEmergencyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Emergency (PIN)"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- EMERGENCY SERVICES -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/policeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Police (100)"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fireBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Fire (101)"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ambulanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Ambulance (108)"/>
+
+    </LinearLayout>
+
+</ScrollView>
